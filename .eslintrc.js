@@ -22,7 +22,7 @@ module.exports = {
     plugins: ['react'],
     rules: {
         'no-console': 'off',
-        indent: ['error', 4, { ignoredNodes: ['JSXElement'] }],
+        indent: ['error', 4, { ignoredNodes: ['JSXElement'], SwitchCase: 1 }],
         'class-methods-use-this': 'off',
         'no-param-reassign': 'off',
         'comma-dangle': ['error', 'never'],
@@ -35,6 +35,7 @@ module.exports = {
         //     }
         // ],
         // react
+        'react/jsx-uses-react': 'error',
         'react/jsx-filename-extension': 'off',
         'react/state-in-constructor': 'off',
         'react/jsx-indent': ['error', 4],

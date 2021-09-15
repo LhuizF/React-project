@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components';
 import colors from '../config/colors';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default createGlobalStyle`
     *{
@@ -31,6 +32,20 @@ export default createGlobalStyle`
     a{
         text-decoration: none;
         color:${colors.main} ;
+    }
+
+    a:hover{
+        color: ${colors.mainLight};
+    }
+
+    body .Toastify .Toastify__toast-container .Toastify__toast--success {
+        background: ${colors.success};
+        color: #fff;
+    }
+
+    body .Toastify .Toastify__toast-container .Toastify__toast--error {
+        background: ${colors.danger};
+        color: #fff;
     }
 `;
 

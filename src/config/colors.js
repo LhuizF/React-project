@@ -1,7 +1,7 @@
 export default {
-    main: '#0077b6',
-    mainDark: '#03045e',
-    mainLight: '#00b4d8',
+    main: '#03045e',
+    mainDark: '#1a1a1d',
+    mainLight: '#0077b6',
     success: '#28A744',
     danger: '#DC3545',
     warning: '#FFC108'
