@@ -2,10 +2,10 @@ import React from 'react';
 
 import { Title } from '../../styles/GlobalStyles';
 
-export default function Login() {
+export default function Fotos() {
     return (
         <Title>
-            <h1>Login</h1>
+            <h1>Fotos</h1>
         </Title>
     );
 }

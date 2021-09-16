@@ -4,5 +4,6 @@ export default {
     mainLight: '#0077b6',
     success: '#28A744',
     danger: '#DC3545',
-    warning: '#FFC108'
+    warning: '#FFC108',
+    white: '#e3e3e3'
 };

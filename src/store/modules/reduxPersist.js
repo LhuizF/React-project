@@ -4,7 +4,7 @@ import { persistReducer } from 'redux-persist';
 export default (reducers) => {
     const persistedReducer = persistReducer(
         {
-            key: 'NOME-DO-APP // REACT-BASE',
+            key: 'T',
             storage,
             whitelist: ['login', 'carrinho']
         },

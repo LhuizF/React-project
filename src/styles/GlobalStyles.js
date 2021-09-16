@@ -29,6 +29,14 @@ export default createGlobalStyle`
         font-weight: 700;
     }
 
+    button:hover{
+        background-color: ${colors.mainLight};
+    }
+
+    button:active{
+        transform: translateY(3px);
+    }
+
     a{
         text-decoration: none;
         color:${colors.main} ;
@@ -47,15 +55,33 @@ export default createGlobalStyle`
         background: ${colors.danger};
         color: #fff;
     }
+
 `;
 
-export const Container = styled.section`
-    margin: 30px auto;
-    max-width: 360px;
-    background: #fff;
+export const MainContainer = styled.div`
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+`;
+
+export const Title = styled.div`
+    margin: 30px auto;
+    width: 80%;
+    background: ${colors.white};
     padding: 10px;
+    text-align: center;
+`;
+
+export const Section = styled.section`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    img {
+        width: 60%;
+    }
 `;

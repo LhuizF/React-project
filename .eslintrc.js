@@ -26,14 +26,7 @@ module.exports = {
         'class-methods-use-this': 'off',
         'no-param-reassign': 'off',
         'comma-dangle': ['error', 'never'],
-        // 'keyword-spacing': [
-        //     'error',
-        //     {
-        //         overrides: {
-        //             if: { after: false }
-        //         }
-        //     }
-        // ],
+
         // react
         'react/jsx-uses-react': 'error',
         'react/jsx-filename-extension': 'off',
