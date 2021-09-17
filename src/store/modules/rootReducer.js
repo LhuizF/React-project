@@ -1,9 +1,7 @@
 import { combineReducers } from 'redux';
 
-import carrinho from './carrinho/reducer';
-import login from './login/reducer';
+import auth from './auth/reducer';
 
 export default combineReducers({
-    carrinho,
-    login
+    auth
 });

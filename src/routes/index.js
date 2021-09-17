@@ -1,4 +1,4 @@
-import { Switch, Route } from 'react-router-dom';
+import { Switch } from 'react-router-dom';
 
 import PrivateRoute from './PrivateRoute';
 import Login from '../pages/Login';
@@ -11,24 +11,18 @@ import Register from '../pages/Register';
 export default function Routes() {
     return (
         <Switch>
-            <Route exact path="/" component={Alunos} />
+            <PrivateRoute exact path="/" component={Alunos} />
             <PrivateRoute
                 exact
-                path="/aluno:id/edit"
+                path="/aluno/:id/edit"
                 component={Aluno}
                 isClosed
             />
-            <PrivateRoute exact path="/aluno" component={Aluno} isClosed />
-            <PrivateRoute
-                exact
-                path="/aluno:id/delete"
-                component={Aluno}
-                isClosed
-            />
-            <Route exact path="/fotos/:id" component={Fotos} />
-            <Route exact path="/login" component={Login} />
-            <Route exact path="/register" component={Register} />
-            <Route path="*" component={error404} />
+            <PrivateRoute exact path="/aluno/" component={Aluno} isClosed />
+            <PrivateRoute exact path="/fotos/:id" component={Fotos} isClosed />
+            <PrivateRoute exact path="/login/" component={Login} />
+            <PrivateRoute exact path="/register" component={Register} />
+            <PrivateRoute path="*" component={error404} />
         </Switch>
     );
 }

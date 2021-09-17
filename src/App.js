@@ -8,7 +8,7 @@ import store, { persistor } from './store';
 import GlobalStyles from './styles/GlobalStyles';
 import Header from './components/Header';
 import Routes from './routes';
-import { history } from './services/history';
+import history from './services/history';
 
 function App() {
     return (

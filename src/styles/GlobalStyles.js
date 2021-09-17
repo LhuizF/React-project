@@ -1,6 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import colors from '../config/colors';
 import 'react-toastify/dist/ReactToastify.css';
+
+import colors from '../config/colors';
 
 export default createGlobalStyle`
     *{
@@ -25,12 +26,13 @@ export default createGlobalStyle`
         border: none;
         color: #fff;
         padding: 10px 20px;
-        border-radius: 6px;
-        font-weight: 700;
+        border-radius: 4px;
+        font-weight: 600;
+        transition: filter 300ms;
     }
 
     button:hover{
-        background-color: ${colors.mainLight};
+        filter: brightness(1.5);
     }
 
     button:active{
@@ -55,7 +57,6 @@ export default createGlobalStyle`
         background: ${colors.danger};
         color: #fff;
     }
-
 `;
 
 export const MainContainer = styled.div`
@@ -83,5 +84,11 @@ export const Section = styled.section`
 
     img {
         width: 60%;
+    }
+
+    @media (max-width: 600px) {
+        img {
+            display: none;
+        }
     }
 `;

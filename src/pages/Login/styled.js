@@ -1,13 +1,33 @@
 import styled from 'styled-components';
 
-export const MainDiv = styled.div`
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
-    padding: 50px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+import colors from '../../config/colors';
 
-    h1 {
-        color: red;
+export const Form = styled.form`
+    margin-top: 20px;
+    padding: 20px 0;
+    background-color: ${colors.white};
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 14px;
+
+    label {
+        padding: 10px;
+        width: 90%;
+    }
+
+    input {
+        margin-top: 5px;
+        width: 100%;
+        height: 26px;
+        font-size: 18px;
+        border: 1px solid #ddd;
+        padding: 0 5px;
+        border-radius: 4px;
+
+        &:focus {
+            border: 1px solid ${colors.main};
+        }
     }
 `;
