@@ -4,7 +4,7 @@ import { isEmail } from 'validator';
 import { useDispatch, useSelector } from 'react-redux';
 import { get } from 'lodash';
 
-import { Title, MainContainer, Section } from '../../styles/GlobalStyles';
+import { MainContainer, Section } from '../../styles/GlobalStyles';
 import uniLogo from '../../assets/img/uniLogo.png';
 import { Form } from './styled';
 import * as actions from '../../store/modules/auth/actions';
@@ -41,9 +41,8 @@ export default function Login(props) {
 
     return (
         <MainContainer>
-            <Title>
-                <h1>Login</h1>
-            </Title>
+            <h1>Login</h1>
+
             <Section>
                 <img src={uniLogo} alt="" />
 

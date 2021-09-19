@@ -10,7 +10,7 @@ export const Form = styled.form`
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 14px;
+    border-radius: 10px;
 
     label {
         padding: 10px;

@@ -5,5 +5,5 @@ export default {
     success: '#28A744',
     danger: '#DC3545',
     warning: '#FFC108',
-    white: '#e3e3e3'
+    white: '#F1F1F0'
 };

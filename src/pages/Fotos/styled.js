@@ -1,13 +1,27 @@
 import styled from 'styled-components';
+import colors from '../../config/colors';
 
-export const MainDiv = styled.div`
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
-    padding: 50px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+export const Form = styled.form`
+    input {
+        display: none;
+    }
 
-    h1 {
-        color: red;
+    label {
+        height: 180px;
+        width: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #eee;
+        border: 5px dashed ${colors.main};
+        cursor: pointer;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
     }
 `;

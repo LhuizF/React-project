@@ -71,14 +71,13 @@ export const MainContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-`;
+    background-color: #fffffe;
+    padding: 10px 20px;
+    border-radius: 15px;
 
-export const Title = styled.div`
-    margin: 30px auto;
-    width: 80%;
-    background: ${colors.white};
-    padding: 10px;
-    text-align: center;
+    h1 {
+        margin-bottom: 10px;
+    }
 `;
 
 export const Section = styled.section`

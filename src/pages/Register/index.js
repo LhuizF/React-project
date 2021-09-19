@@ -4,7 +4,7 @@ import { isEmail } from 'validator';
 // import { get } from 'lodash';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { Title, MainContainer, Section } from '../../styles/GlobalStyles';
+import { MainContainer, Section } from '../../styles/GlobalStyles';
 import uniLogo from '../../assets/img/uniLogo.png';
 import { Form } from './styled';
 // import axios from '../../services/axios';
@@ -63,9 +63,8 @@ export default function Register() {
 
     return (
         <MainContainer>
-            <Title>
-                <h1>{id ? 'Editar Dados' : 'Registre-se'}</h1>
-            </Title>
+            <h1>{id ? 'Editar Dados' : 'Registre-se'}</h1>
+
             <Section>
                 <img src={uniLogo} alt="" />
 

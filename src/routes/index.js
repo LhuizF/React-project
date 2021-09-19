@@ -19,7 +19,7 @@ export default function Routes() {
                 isClosed
             />
             <PrivateRoute exact path="/aluno/" component={Aluno} isClosed />
-            <PrivateRoute exact path="/fotos/:id" component={Fotos} isClosed />
+            <PrivateRoute exact path="/photos/:id" component={Fotos} isClosed />
             <PrivateRoute exact path="/login/" component={Login} />
             <PrivateRoute exact path="/register" component={Register} />
             <PrivateRoute path="*" component={error404} />
