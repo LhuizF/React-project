@@ -1,18 +1,21 @@
 import React from 'react';
 import { toast } from 'react-toastify';
 import { isEmail } from 'validator';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { get } from 'lodash';
 
 import { Title, MainContainer, Section } from '../../styles/GlobalStyles';
 import uniLogo from '../../assets/img/uniLogo.png';
 import { Form } from './styled';
 import * as actions from '../../store/modules/auth/actions';
+import Loading from '../../components/Loading';
 
 export default function Login(props) {
     const dispatch = useDispatch();
 
     const prevPath = get(props, 'location.state.prevPath', '/');
+
+    const isLoading = useSelector((state) => state.auth.isLoading);
 
     const [email, setEmail] = React.useState('');
     const [password, setPassword] = React.useState('');
@@ -68,6 +71,7 @@ export default function Login(props) {
                     <button type="submit">Logar</button>
                 </Form>
             </Section>
+            <Loading isLoading={isLoading} />
         </MainContainer>
     );
 }

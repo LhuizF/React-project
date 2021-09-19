@@ -1,5 +1,6 @@
 import * as types from '../types';
 
+// login
 export function loginRequest(payload) {
     return {
         type: types.LOGIN_REQUEST,
@@ -17,6 +18,35 @@ export function loginSuccess(payload) {
 export function loginFailure(payload) {
     return {
         type: types.LOGIN_FAILURE,
+        payload
+    };
+}
+
+// register
+export function registerRequest(payload) {
+    return {
+        type: types.REGISTER_REQUEST,
+        payload
+    };
+}
+
+export function registerCreatedSuccess(payload) {
+    return {
+        type: types.REGISTER_CREATED_SUCCESS,
+        payload
+    };
+}
+
+export function registerUpdatedSuccess(payload) {
+    return {
+        type: types.REGISTER_UPDATED_SUCCESS,
+        payload
+    };
+}
+
+export function registerFailure(payload) {
+    return {
+        type: types.REGISTER_FAILURE,
         payload
     };
 }

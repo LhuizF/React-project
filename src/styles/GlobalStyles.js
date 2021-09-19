@@ -57,6 +57,11 @@ export default createGlobalStyle`
         background: ${colors.danger};
         color: #fff;
     }
+
+    body .Toastify .Toastify__toast-container .Toastify__toast--warning {
+        background: ${colors.warning};
+        color: #fff;
+    }
 `;
 
 export const MainContainer = styled.div`
